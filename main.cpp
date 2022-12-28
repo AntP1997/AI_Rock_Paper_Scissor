@@ -9,7 +9,7 @@
 #include <iomanip>
 #include <ctime>
 #include <unistd.h>
-#define OSClear "cls"// windows = cls // linux = clear
+#define OSClear "cls"// windows DOS OS = cls // unix like OS = clear
 void game(bool);
 using namespace std;
 void SleepFunction2()
