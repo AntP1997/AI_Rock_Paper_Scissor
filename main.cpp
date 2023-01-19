@@ -5,6 +5,9 @@
   gmail: pricejr7777@gmail.com
   Note: I hope you like this game
 */
+// add try and catch
+
+
 #include <iostream>
 #include <iomanip>
 #include <ctime>
