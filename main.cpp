@@ -17,11 +17,11 @@ void game(bool);
 using namespace std;
 void SleepFunction2()
 {
-for(int i = 0; i <= 1000000000;i++){}
+ sleep(0);
 }
 void SleepFunction()//this is a sleep function
 {
-  for(int i = 0; i <= 10000000;i++){}
+  sleep(0);
 
 }
 void gameload1(char LetterArray[],/*this the sleep function counting with the for loop*/void SleepFun(),int num)
@@ -196,7 +196,7 @@ if(count == 0)
    {
      if (WhoIsPlaying == "hc" ) // Human is Playing the Computer
     {
-     if (HumanPlayer1turn <3) //this means if your turns again this is just keeping up with your mistakes if you mistake is under three execute the if statment
+     if (HumanPlayer1turn <3) //this means if your turns is under 3. this statment keeps up with your sleeping mistakes your mistake is under three execute the if statment
        {
         cout<<"\"Spelling mistake you did not entered the right command\""<<endl;
         cout<< "\"\a you have to enter rock, paper,or scissor \""<<endl;
@@ -205,6 +205,7 @@ if(count == 0)
         cout<<endl<<endl;
         HumanMistake++;
         game(GameSwitch,Sleep1); // this is a recursion
+        exit(0);
       }
     }
    }
